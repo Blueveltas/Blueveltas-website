@@ -105,6 +105,33 @@
         }
     </style>
 
+    <style type="text/css">
+        /* Chart.js */
+        @-webkit-keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .chartjs-render-monitor {
+            -webkit-animation: chartjs-render-animation 0.001s;
+            animation: chartjs-render-animation 0.001s;
+        }
+    </style>
     <style>
         @font-face {
             font-family: 'NotoSans_online_security';
@@ -128,12 +155,14 @@
     </style>
 </head>
 
-<body class="font-nunito text-base text-black dark:text-white dark:bg-slate-900">
-
-    <nav id="topnav" class="defaultscroll">
+<body class="font-nunito text-base text-black dark:text-white dark:bg-slate-900"
+    style="position: relative; min-height: 100%; top: 0px; pointer-events: auto !important" cz-shortcut-listen="true">
+    <!-- Loader Start -->
+    <!-- Start Navbar -->
+    <nav id="topnav" class="defaultscroll is-sticky">
         <div class="container">
             <!-- Logo container-->
-            <a class="logo pl-0" href="index.html">
+            <a class="logo pl-0" href="index.html" target="_self">
                 <span class="inline-block dark:hidden">
                     <img src="./images/pngtree_cityscape-with-skyscrapers-and-office-buildings_21576862.png"
                         style="max-width: 50px;" class="l-dark" alt="" height="24" />
@@ -184,25 +213,25 @@
             <div id="navigation">
                 <!-- Navigation Menu-->
                 <ul class="navigation-menu nav-light">
-                    <li><a href="index.html" class="sub-menu-item">Home</a></li>
+                    <li><a href="index.html" class="sub-menu-item" target="_self">Home</a></li>
                     <li class="has-submenu parent-parent-menu-item">
                         <a href="javascript:void(0)">Our Company</a><span class="menu-arrow"></span>
                         <ul class="submenu">
                             <li>
-                                <a href="about.html">About</a>
+                                <a href="about.html" target="_self">About</a>
                             </li>
                         </ul>
                     </li>
                     <li class="has-submenu parent-parent-menu-item">
                         <a href="javascript:void(0)">For Investors</a><span class="menu-arrow"></span>
                         <ul class="submenu">
-                            <li><a href="crypto_investment.html">Crypto Investment</a></li>
-                            <li><a href="stock_investment.html">Stock Investment</a></li>
-                            <li><a href="nfp.html">NFP</a></li>
-                            <li><a href="real_estate.html">Real Estate</a></li>
-                            <li><a href="hedge_funds.html">Hedge Fund</a></li>
-                            <li><a href="loan.html">Loan</a></li>
-                            <li><a href="gold_mining.html">Gold Mining</a></li>
+                            <li><a href="stock_investment.html" target="_self">Stock Investment</a></li>
+                            <li><a href="nfp.html" target="_blank">NFP</a></li>
+                            <li><a href="crypto_investment.html" target="_self">Crypto Investment</a></li>
+                            <li><a href="real_estate.html" target="_self">Real Estate</a></li>
+                            <li><a href="hedge_funds.html" target="_self">Hedge Fund</a></li>
+                            <li><a href="loan.html" target="_self">Loan</a></li>
+                            <li><a href="gold_mining.html" target="_self"></a>Gold Mining</a></li>
                         </ul>
                     </li>
                     <li class="has-submenu parent-parent-menu-item">
@@ -222,7 +251,7 @@
                     <li class="has-submenu parent-menu-item">
                         <a href="contact.html">Contact Us</a>
                     </li>
-                    <li><a href="real_estate.html" class="sub-menu-item" target="_blank">Register</a>
+                    <li><a href="register.html" class="sub-menu-item" target="_self">Register</a>
                     </li>
                 </ul>
                 <!--end navigation menu-->
@@ -308,7 +337,7 @@
             <div class="container">
                 <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
                     <div class="lg:col-span-5">
-                        <img src="./images/3121.webp" alt="" style="border-radius: 20px;" />
+                        <img src="about_files/office.jpg" alt="" style="border-radius: 20px;" />
                     </div>
                     <div class="lg:col-span-7 mt-8 md:mt-0">
                         <div class="lg:ml-10">
@@ -432,7 +461,7 @@
             <div class="container">
                 <div class="grid md:grid-cols-12 grid-col-1 items-center gap-[30px]">
                     <div class="lg:col-span-5 md:col-span-6 order-2 md:order-1">
-                        <img src="./About_files/bg5.svg" alt="">
+                        <img src="images/360_F_1441984880_KFXR4RNTuvZzwRgpDbCfRvqwIdLRS61T.jpg" alt="">
                     </div>
                     <div class="lg:col-span-7 md:col-span-6 order-1 md:order-2">
                         <div class="lg:ml-10">
@@ -530,10 +559,6 @@
                         </li>
                         <li class="inline-block md:m-6 my-6 mx-1">
                             <img src="./About_files/primecoin.png"
-                                class="shadow-md dark:shadow-gray-800 rounded-full h-20 w-20 p-4" alt="" />
-                        </li>
-                        <li class="inline-block md:m-6 my-6 mx-1">
-                            <img src="./About_files/zcash.html"
                                 class="shadow-md dark:shadow-gray-800 rounded-full h-20 w-20 p-4" alt="" />
                         </li>
                     </ul>
@@ -918,12 +943,7 @@
     </style>
 
 
-
-
-
-
-
-
+    
 </body>
 <!-- Mirrored from fundamental-trade.com/page/about by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Aug 2023 18:32:24 GMT -->
 
