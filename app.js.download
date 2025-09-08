@@ -38,7 +38,7 @@ function fn() {
     // Menus
     activateMenu();
 }
-
+}
 //Menu
 /*********************/
 /* Toggle Menu */
